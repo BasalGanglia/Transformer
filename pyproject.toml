@@ -35,6 +35,7 @@ pytest = "^7.4.0"
 torch = "^2.0.1"
 sphinx = "^7.0.1"
 sphinx-bootstrap-theme = "^0.8.1"
+black = "^23.3.0"
 
 [tool.poetry.dev-dependencies]
 autoflake = "*"
