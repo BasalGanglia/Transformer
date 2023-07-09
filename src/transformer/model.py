@@ -21,7 +21,7 @@ class InputEmbeddings(nn.Module):
         self.embedding = nn.Embedding(vocab_size, d_model)
         self.d_model = d_model
 
-    def forward(self, x):
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
         """forward method
 
         Args:
@@ -30,4 +30,6 @@ class InputEmbeddings(nn.Module):
         Returns:
             torch.Tensor: output tensor
         """
-        return self.embedding(x) * torch.sqrt(torch.tensor(self.d_model))
+        value = self.embedding(x) * torch.sqrt(torch.tensor(self.d_model))
+        assert isinstance(value, torch.Tensor)
+        return value

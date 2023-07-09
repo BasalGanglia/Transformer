@@ -1,6 +1,6 @@
 import torch
 import unittest
-from src.transformer.model import (
+from transformer.model import (
     InputEmbeddings,
 )  # replace 'your_module' with the actual module name
 
