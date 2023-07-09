@@ -1,8 +1,10 @@
-import torch
 import unittest
-from transformer.model import (
+
+import torch
+
+from transformer.model import (  # replace 'your_module' with the actual module name
     InputEmbeddings,
-)  # replace 'your_module' with the actual module name
+)
 
 
 class TestInputEmbeddings(unittest.TestCase):
