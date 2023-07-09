@@ -2,9 +2,7 @@
 name = "transformer"
 version = "0.0.1"
 description = "A short description of the project"
-authors = [
-    "Ilkka Kosunen <tyvitumake@gmail.com>",
-]
+authors = ["Ilkka Kosunen <tyvitumake@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
@@ -13,29 +11,29 @@ homepage = "https://basalganglia.github.io/transformer"
 repository = "https://github.com/basalganglia/transformer"
 
 classifiers = [
-  "Development Status :: 4 - Beta",
-  "Intended Audience :: Developers",
-  "Operating System :: OS Independent",
-  "Programming Language :: Python",
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.7",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
-  "Topic :: Software Development :: Libraries :: Python Modules",
-  "Typing :: Typed",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
 ]
 
-packages = [
-    { include = "transformer", from = "src" }
-]
+packages = [{ include = "transformer", from = "src" }]
 
 [tool.poetry.dependencies]
-python = ">=3.8.0, <4.0.0"
+python = ">=3.9, <4.0.0"
 pytest = "^7.4.0"
 torch = "^2.0.1"
 sphinx = "^7.0.1"
 sphinx-bootstrap-theme = "^0.8.1"
 black = "^23.3.0"
+numpy = "^1.25.1"
+pytest-cov = "^4.1.0"
 
 [tool.poetry.dev-dependencies]
 autoflake = "*"
@@ -48,7 +46,7 @@ flake8-debugger = "*"
 flake8-eradicate = "*"
 flake8-logging-format = "*"
 isort = "*"
-mkdocstrings = {version = ">=0.18", extras = ["python"]}
+mkdocstrings = { version = ">=0.18", extras = ["python"] }
 mkdocs-material = "*"
 mypy = "*"
 pep8-naming = "*"
@@ -83,10 +81,7 @@ addopts = """\
 
 [tool.coverage.report]
 fail_under = 100
-exclude_lines = [
-    'if TYPE_CHECKING:',
-    'pragma: no cover'
-]
+exclude_lines = ['if TYPE_CHECKING:', 'pragma: no cover']
 
 [tool.mypy]
 disallow_any_unimported = true
