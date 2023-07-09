@@ -1,9 +1,7 @@
 name: DockerTest
 on:
   pull_request:
-  push:
-    branches:
-      - "**"
+
 jobs:
   test:
     runs-on: ubuntu-latest
